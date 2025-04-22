@@ -1,0 +1,67 @@
+:root{
+    --color-primary: #219ebc;
+    --color-seconary: #faf6eb
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-style: normal;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--color-seconary);  
+}
+
+header{
+    background: var(--color-primary);
+    text-align: center;
+    color: white;
+    font-weight: 700px;
+    font-style: italic;
+    font-size: 2rem;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+}
+.note{
+    padding: 2rem;
+}
+
+.note__area{
+    padding: 1rem;
+    border: 0.3rem solid gray;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.note__area:hover{
+    border: 0.3rem solid black;
+}
+
+.note__title{
+
+}
+
+.note__content{
+    padding: 2rem;
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+
+footer p {
+  background: var(--color-primary);
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}

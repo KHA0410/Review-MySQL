@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review MySQL</title>
+    <link rel="shortcut icon" href="./asset/img/mysql.png" type="image/x-icon">
+    <!-- My css -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- Font family -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>Review MySQL</header>
+    <div class="note">
+        <div class="note__area">
+            <h1 class="note__tite">⭐MySQL là gì?</h1>
+            <p class="note__content">
+                - MySQL là một hệ quản trị cơ sở dữ liệu có quan hệ <br>
+                - SQL (Structured Query Language) là ngôn ngữ truy vấn được dùng để tương tác với cơ sở dữ liệu như MySQL <br>
+                -  DATABASE là nơi lưu toàn bộ dữ liệu của một website (bên trong là các table) <br>
+            </p>
+        </div>
+
+        <div class="note__area">
+            <h1 class="note__title">⭐ Các câu lệnh SQL</h1>
+            <p class="note__content">
+                <b>TẠO CSDL & Dùng</b><br>
+                <b>CREATE DATABASE</b> TÊN; <br>
+                <b>USE</b> TÊN;
+                <br><br>
+                <b>TẠO BẢNG</b><br>
+                <b>CREATE TABLE</b> HocSinh(<br>
+                    id <b>INT</b>, <br>
+                    ho_ten <b>VARCHAR(100),</b> <br>
+                    tuoi <b>INT</b> <br>
+                );
+                <br><br>
+                <b>THÊM DỮ KIỆU</b><br>
+                <b>INSERT INTO</b> HocSinh (ho_ten, tuoi) <b>VALUES</b><br>
+                ('Nguyễn Kha', 23); <br><br>
+                <b>CẬP NHẬT DỮ LIỆU</b> <br>
+                <b>UPDATE</b> HocSinh <br>
+                <b>SET</b> tuoi = 24 <br>
+                <b>WHERE</b> ho_ten = 'Nguyễn Kha'; <br><br>
+                <b>XÓA DỮ LIỆU</b> <br>
+                <b>DELETE FROM</b> HocSinh<br>
+                <b>WHERE</b> id = 1; <br>
+                <br>
+                <b>TRUY VẤN(Hiển thị bảng)</b><br>
+                <b>SELECT</b> * <b>FROM</b> HocSinh; //Hiển thị cả bảng HocSinh <br> 
+                <br>
+                <b>TRUY VẤN CÓ ĐIỀU KIỆN</b><br>
+                <b>SELECT</b> * <b>FROM</b> HocSinh <br>
+                <b>WHERE</b> tuoi = 23; //Chỉ hiện ra các học sinh có tuổi là 23<br>
+                <b>WHRE</b> ho_ten = '%Nguyễn%'; //Hiển trị ra các học sinh trong tên có chữ Nguyễn<br>
+                <br>
+                <b>SẮP XẾP VÀ GIỚI HẠN</b><br>
+                ASC: tăng dần, DESC: Giam dần <br>
+                <b>SELECT</b> * <b>FROM</b> HocSinh <br>
+                <b>ORDER BY</b> id <b>ASC</b> <br>
+                <b>LIMIT</b> 3; //Chỉ hiển thị 3 học sinh
+            </p>
+        </div>
+    </div>
+</body>
+</html>
