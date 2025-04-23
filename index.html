@@ -19,12 +19,25 @@
     <header>Review MySQL</header>
     <div class="note">
         <div class="note__area">
-            <h1 class="note__tite">⭐MySQL là gì?</h1>
+            <h1 class="note__tite">⭐ MySQL là gì?</h1>
             <p class="note__content">
                 - MySQL là một hệ quản trị cơ sở dữ liệu có quan hệ <br>
                 - SQL (Structured Query Language) là ngôn ngữ truy vấn được dùng để tương tác với cơ sở dữ liệu như MySQL <br>
                 -  DATABASE là nơi lưu toàn bộ dữ liệu của một website (bên trong là các table) <br>
             </p>
+        </div>
+
+        <div class="note__area">
+            <h1 class="note__title">⭐ Cách setup dùng MySQL bằng Docker và TablePlus</h1>
+            <p class="note__content">
+                - Cài đặt Docker và TablePlus <br>
+                - Mở cmd và chạy lệnh sau:<br>
+                <code>docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql</code><br>
+                - Mở TablePlus và kết nối với MySQL, với các thông số như sau:<br>
+                <code>Host: localhost</code><br>
+                <code>Port: 3306</code><br>
+                <code>User: root</code><br>
+                <code>Password: 123456
         </div>
 
         <div class="note__area">
