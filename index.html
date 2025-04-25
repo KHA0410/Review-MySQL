@@ -71,13 +71,37 @@
                 <b>TRUY VẤN CÓ ĐIỀU KIỆN</b><br>
                 <b>SELECT</b> * <b>FROM</b> HocSinh <br>
                 <b>WHERE</b> tuoi = 23; //Chỉ hiện ra các học sinh có tuổi là 23<br>
-                <b>WHRE</b> ho_ten = '%Nguyễn%'; //Hiển trị ra các học sinh trong tên có chữ Nguyễn<br>
+                <b>WHRE</b> ho_ten <b>LIKE</b> '%Nguyễn%'; //Hiển trị ra các học sinh trong tên có chữ Nguyễn<br>
                 <br>
                 <b>SẮP XẾP VÀ GIỚI HẠN</b><br>
                 ASC: tăng dần, DESC: Giam dần <br>
                 <b>SELECT</b> * <b>FROM</b> HocSinh <br>
                 <b>ORDER BY</b> id <b>ASC</b> <br>
                 <b>LIMIT</b> 3; //Chỉ hiển thị 3 học sinh
+            </p>
+        </div>
+
+        <div class="note__area">
+            <h1 class="area__title">⭐ Các hàm tổng hợp(Aggregate Functions)</h1>
+            <p class="note__content">
+                <b>COUNT</b><br>
+                <b>SELECT</b> COUNT(*) <b>FROM</b> HocSinh; //Đếm số lượng học sinh trong bảng<br>
+                <br>
+                <b>SUM</b><br>
+                <b>SELECT</b> SUM(tuoi) <b>FROM</b> HocSinh; //Tính tổng tuổi của học sinh<br>
+                <br>
+                <b>AVG</b><br>
+                <b>SELECT</b> AVG(tuoi) <b>FROM</b> HocSinh; //Tính trung bình tuổi của học sinh<br>
+                <br>
+                <b>MIN, MAX</b><br>
+                <b>SELECT</b> MAX(tuoi), MIN(tuoi) <b>FROM</b> HocSinh; //Tìm tuổi lớn nhất và nhỏ nhất của học sinh<br>
+                <br>
+                Có thể kết hợp với WHERE <br>
+                <b>SELECT</b> <b>COUNT(*)</b> <b>FROM</b> HocSinh<br>
+                <b>WHERE</b> tuoi > 16; //Đếm số học sinh có tuổi lớn hơn 16<br>
+                <br>
+                <b>SELECT</b> AVG(tuoi) <b>FROM</b> HocSinh<br>
+                <b>WHERE</b> ho_ten <b>LIKE</b> '%Nguyễn%'; //Tính tuổi trung bình của học sinh có tên chứa chữ Nguyễn<br>
             </p>
         </div>
     </div>
