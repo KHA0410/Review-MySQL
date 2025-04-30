@@ -117,6 +117,19 @@
                 <br>
             </p>
         </div>
-    </div>
+
+        <div class="note__area">
+            <h1 class="note__title">⭐Mệnh đề HAVING</h1>
+            <p class="note__content">
+                -> Dùng để lọc dữ liệu sau khi đã nhóm, có cách dùng giống WHERE<br>
+                <b>SELECT</b> lop, COUNT(*) <b>FROM</b> HocSinh<br>
+                <b>GROUP BY</b> lop<br>
+                <b>HAVING</b> COUNT(*) > 2; //Chỉ hiện ra các lớp có số lượng học sinh lớn hơn 2<br>
+                <br>
+                <b>SELECT</b> lop, AVG(tuoi) <b>FROM</b> HocSinh<br>
+                <b>GROUP BY</b> lop<br>
+                <b>HAVING</b> AVG(tuoi) > 20; //Chỉ hiện ra các lớp có tuổi trung bình lớn hơn 20<br>
+            </p>
+        </div>
 </body>
 </html>
