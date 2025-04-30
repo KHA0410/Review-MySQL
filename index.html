@@ -49,7 +49,7 @@
                 <br><br>
                 <b>TẠO BẢNG</b><br>
                 <b>CREATE TABLE</b> HocSinh(<br>
-                    id <b>INT</b>, <br>
+                    id <b>INT</b> <b>PRIMARY KEY</b> AUTO_INCREMENT, <br>
                     ho_ten <b>VARCHAR(100),</b> <br>
                     tuoi <b>INT</b> <br>
                 );
@@ -102,6 +102,19 @@
                 <br>
                 <b>SELECT</b> AVG(tuoi) <b>FROM</b> HocSinh<br>
                 <b>WHERE</b> ho_ten <b>LIKE</b> '%Nguyễn%'; //Tính tuổi trung bình của học sinh có tên chứa chữ Nguyễn<br>
+            </p>
+        </div>
+
+        <div class="note__area">
+            <h1 class="note__title">⭐Nhóm dữ liêum với GROUP BY</h1>
+            <p class="note__content">
+                -> Kết hợp với hàm tổng hợp (COUNT, AVG, SUM, MAX, MIN)<br>
+                <b>SELECT</b> lop, COUNT(*) <b>FROM</b> HocSinh<br>
+                <b>GROUP BY</b> lop; //Nhóm học sinh theo lớp và đếm số lượng<br>
+                <br>
+                <b>SELECT</b> lop, AVG(tuoi) <b>FROM</b> HocSinh<br>
+                <b>GROUP BY</b> lop; //Nhóm học sinh theo lop và tính tuổi trung bình<br>
+                <br>
             </p>
         </div>
     </div>
